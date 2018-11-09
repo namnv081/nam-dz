@@ -1,0 +1,277 @@
+
+@font-face {
+	font-family: "iCielDomaineDisplay-Bold";
+	src: url("../fonts/iCielDomaineDisplay-Bold.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "iCielDomaineDisplay-Regular";
+	src: url("../fonts/iCielDomaineDisplay-Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "iCielGotham-Bold";
+	src: url("../fonts/iCielGotham-Bold.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "iCielGotham-Book";
+	src: url("../fonts/iCielGotham-Book.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "iCielGotham-Light";
+	src: url("../fonts/iCielGotham-Light.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "iCielGotham-Medium";
+	src: url("../fonts/iCielGotham-Medium.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'iCielGotham-Black';
+	src: url('../fonts/Gotham-Black.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+*{margin:0;}
+
+body{
+	margin: 0;
+}
+.h_banner .video{
+	height: 100vh;
+	width: 500px;
+}
+.h_banner .title p{
+	color: #FFFFFF;	
+	font-family: "iCielDomaineDisplay-Regular";
+	font-weight: 600;
+	font-size: 56px;	
+	letter-spacing: 1.12px;	
+	line-height: 67px;
+	text-align: center;	
+	text-shadow: 0 5px 20px rgba(0,0,0,0.4);
+	margin: 0;
+}
+.h_banner{
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.h_banner .content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 53%;
+	margin-bottom: 65px;
+}
+.h_banner .content .title{
+	position: relative;
+	padding-bottom: 45px;
+}
+.h_banner .content .title:after{
+	position: absolute;
+	content: '';
+	background-color: #ffffff;
+	width: 85px;
+	height: 2px;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.h_introduct{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*position: relative;*/
+}
+.h_introduct .swiper-slide .img{
+	border: 4px solid white;
+	width: calc(100% - 8px);
+	height: 291px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.h_introduct .swiper-slide:last-child {
+	margin-right: 0;
+}
+.h_introduct .content .title{
+	color: #46833C;	
+	font-family: "iCielGotham-Book";
+	font-weight: 200;	
+	font-size: 40px;	
+	line-height: 37px;	
+	text-align: center;	
+	text-shadow: 0 0 10px rgba(0,0,0,0.2);
+	text-transform: uppercase;
+	padding-top: 55px;
+}
+.h_introduct .content .desc{
+	color: #696565;	
+	font-family: "iCielGotham-Light";	
+	font-size: 14px;	
+	line-height: 20px;	
+	text-align: center;
+	/*padding-left: 81px;
+	padding-right: 81px;*/
+	padding-top: 23px;
+	/*margin-bottom: 33px;*/
+	width: 78.1%;
+	margin: auto;
+}
+.h_introduct .content{
+	padding-right: 10.41%;
+	padding-left: 10.41%;
+	position: relative;
+	transform: translateY(-50%);
+	top: 50%;
+}
+.h_introduct .content .text{
+	padding-right: 14%;
+	padding-left: 14%;
+}
+.h_introduct .content .swiper-container{
+	margin-top: 61px;
+}
+.h_introduct .content .slide{
+	position: relative;
+	/*top: 50%;
+	transform: translateY(50%);*/
+}
+.swiper-button-next{
+	right: -38px !important;
+	background-image: url(../img/next.png) !important;
+	/* bottom: 50%; */
+	width: 24px !important;
+	height: 24px !important;
+	top: 50%;
+	transform: translateY(-50%);
+	background-size: cover !important;
+	top: 50%;
+	margin-top: 0 !important;
+
+}
+.swiper-button-prev{
+	left: -38px !important;
+	background-image: url(../img/prev.png) !important;
+	top: 50%;
+	width: 24px !important;
+	height: 24px !important;
+	background-size: cover !important;
+	transform: translateY(-50%);
+	margin-top: 0 !important;
+}
+
+@media only screen and (max-width: 1024px){
+	.h_banner .content {
+		width: 62%;
+	}
+	.h_introduct{
+		height: 570px;
+	}
+	.h_introduct .content {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.h_introduct .content .swiper-container {
+		padding-bottom: 55px;
+	}
+	.h_introduct .content .text {
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+	.swiper-button-prev {
+		left: -28px !important;
+		top: 47% !important;
+	}
+	.swiper-button-next {
+		right: -29px !important;
+		top: 47% !important;
+	}
+}
+@media only screen and (max-width: 768px){
+	.h_banner .content {
+		width: 83%;
+	}
+	.h_introduct .swiper-slide .img {
+		height: 177px;
+	}
+	.swiper-button-next {
+		right: -28px !important;
+		top: 43% !important;
+	}
+	.swiper-button-prev {
+		left: -28px !important;
+		top: 43% !important;
+	}
+	.h_introduct .content .title {
+		font-size: 37px;
+	}
+	.h_introduct .content .text{
+		padding: 0;
+	}
+	.h_introduct .content .desc {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.h_banner{
+		height: 420px;
+	}
+	.h_banner .title p {
+		font-size: 25px;
+		line-height: 40px;
+	}
+	.h_banner .content {
+		top: 27%;
+	}
+	/*.h_banner .content .title:after {
+		left: 37%;
+	}*/
+	.h_banner .content .title {
+		padding-bottom: 20px;
+	}
+	.h_banner .content {
+		width: 100%;
+	}
+	.h_introduct .content .title {
+		font-size: 31px;
+		padding-top: 45px;
+	}
+	.h_introduct .content {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.h_introduct .content .desc {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.swiper-button-next {
+		display: none;
+	}
+	.swiper-button-prev {
+		display: none;
+	}
+	.h_introduct .swiper-slide .img {
+		height: 224px;
+	}
+}
